@@ -9,14 +9,14 @@
 <body>
  <?php 
  $miNombre="Jesus";
- $miedad=31;
+ $miEdad=31;
  $miPoblacion="Dos Hermanas";
 
- echo "Soy $miNombre, tengo $miedad años y vivo en $miPoblacion";
+ echo "Soy $miNombre, tengo $miEdad años y vivo en $miPoblacion";
 
  print "<br>";
  
- printf ("%s tiene %d años y vive en %s", $miNombre, $miedad, $miPoblacion);
+ printf ("%s tiene %d años y vive en %s", $miNombre, $miEdad, $miPoblacion);
  ?>
  </body>
 </html>
