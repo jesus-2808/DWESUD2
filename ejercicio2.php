@@ -16,7 +16,7 @@
    $diagonalMenorRombo=3;
    $areaTriangulo=(($baseTriangulo*$alturaTriangulo)/2);
    $areaCuadrado=($baseCuadrado*$alturaCuadrado);
-   $areaRombo=($diagonalMayorRombo*$diagonalMenorRombo);
+   $areaRombo=($diagonalMayorRombo*$diagonalMenorRombo)/2;
    define("PI", 3.14159);
    $rCirculo=4;
    $areaCirculo=(PI*($rCirculo*$rCirculo));
@@ -37,7 +37,7 @@
 
     print "<br>";
 
-    echo "el area de este circulo es: $areaCirculo";
+    echo "el area del circulo de radio $rCirculo es: $areaCirculo";
     ?>
 </body>
 </html>
