@@ -8,31 +8,31 @@
 </head>
 <body>
     <?php
-    echo $_SERVER['PHP_SELF'];
+    echo "ruta para la ejecución del codigo: ", $_SERVER['PHP_SELF']; 
     print "<br>";
-    echo $_SERVER['SERVER_ADDR'];
+    echo "ip del servidor : ", $_SERVER['SERVER_ADDR'];
     print "<br>";
-    echo $_SERVER['SERVER_NAME'];
+    echo "nombre del servidor: ", $_SERVER['SERVER_NAME'];
     print "<br>";
-    echo $_SERVER['DOCUMENT_ROOT'];
+    echo "carpeta del documento : ",  $_SERVER['DOCUMENT_ROOT'];
     print "<br>";
-    echo $_SERVER['REMOTE_ADDR'];
+    echo  "ip del servidor remoto : " ,$_SERVER['REMOTE_ADDR'];
     print "<br>";
-    echo $_SERVER['REQUEST_METHOD'];
+    echo "metodo de solicitud : ", $_SERVER ['REQUEST_METHOD'];
     print "<br>";
     function prueba()
 {
    static $local=null;
-   global $global;
-   $var1=null;
+   echo $GLOBALS["foo"];
+   $var1=1;
    
 
 }
     echo $local;
     print "<br>";
-    echo $global;
+    echo $GLOBALS; //marca array
     print "<br>";
-    echo $var1;
+    echo $var1; //no te muestra la variable
     ?>
 </body>
 </html>
